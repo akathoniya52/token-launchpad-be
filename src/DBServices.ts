@@ -7,7 +7,7 @@ export class DBServices {
     try {
       await mongoose
         .connect(
-          process.env.MONGO_URI || "mongodb://localhost:27017/tokenlaunchpad"
+          process.env.MONGO_URI || ""
         )
         .then(() => {
           console.log("MongoDB is connected...!");
